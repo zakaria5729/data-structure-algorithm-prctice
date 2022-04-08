@@ -1,3 +1,5 @@
+package inverse_number;
+
 import java.util.Scanner;
 
 public class InverseNumber {
@@ -5,7 +7,6 @@ public class InverseNumber {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
 
-        // 28346751 - 73425681
         int inverse = 0;
         int position = 1;
 

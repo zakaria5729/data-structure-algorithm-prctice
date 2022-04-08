@@ -1,17 +1,8 @@
+package digit_print;
+
 import java.util.Scanner;
 
 public class DigitOfANumber {
-//    public static void main(String[] args) {
-//
-//        Scanner scanner = new Scanner(System.in);
-//        int n = scanner.nextInt();
-//
-//        while (n != 0) {
-//            System.out.println(n % 10);
-//            n /= 10;
-//        }
-//    }
-
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
 

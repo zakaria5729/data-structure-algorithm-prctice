@@ -1,3 +1,5 @@
+package rotate_number;
+
 import java.util.Scanner;
 
 public class RotateNumber {

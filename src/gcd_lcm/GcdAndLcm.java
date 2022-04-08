@@ -1,3 +1,5 @@
+package gcd_lcm;
+
 import java.util.Scanner;
 
 public class GcdAndLcm {
@@ -13,20 +15,6 @@ public class GcdAndLcm {
 
         System.out.println(gcd);
         System.out.println(lcm);
-    }
-
-    static int lcmByBruteForce(int n1, int n2) {
-        int lcm = n1 > n2 ? n1 : n2; //Because LCM cannot be less than the largest number.
-
-        while (true) {
-            if (lcm % n1 == 0 && lcm % n2 == 0) {
-                break;
-            }
-
-            lcm++;
-        }
-
-        return lcm;
     }
 
     static int gcdByDivisionMethod(int n1, int n2) {
@@ -60,5 +48,19 @@ public class GcdAndLcm {
         }
 
         return gcdByRecursion(n2, n1 % n2);
+    }
+
+    static int lcmByBruteForce(int n1, int n2) {
+        int lcm = n1 > n2 ? n1 : n2; //Because LCM cannot be less than the largest number.
+
+        while (true) {
+            if (lcm % n1 == 0 && lcm % n2 == 0) {
+                break;
+            }
+
+            lcm++;
+        }
+
+        return lcm;
     }
 }

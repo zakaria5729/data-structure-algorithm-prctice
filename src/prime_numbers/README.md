@@ -6,43 +6,43 @@
 
 ## Constraints
 
-    1 <= t <= 10000
-    2 <= n < 10^9
+```
+1 <= t <= 10000
+2 <= n < 10^9
+```  
 
 ## Format
 
 **Input**
 
-    A number t
-    A number n
-    A number n
-    .. t number of times
+```
+low 
+high
+``` 
 
 **Output**
 
-    prime
-    not prime
-    not prime
-    .. t number of times
+```
+n1 
+n2
+.. all primes between low and high (both included)  
+```
 
 ## Example
 
 **Sample Input**
-```
-5
-13
-2
-3
-4
-5
-```
+```  
+6   
+24  
+```  
 
 **Sample Output**
-```
-prime
-prime 
-prime
-not prime 
-prime
-```
+```  
+7  
+11  
+13  
+17  
+19  
+23  
+```  
 Reference: https://nados.io/content/data-structures-and-algorithms

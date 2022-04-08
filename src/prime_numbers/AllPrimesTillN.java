@@ -1,8 +1,8 @@
-package prime_number;
+package prime_numbers;
 
 import java.util.*;
 
-public class PrimeNumber {
+public class AllPrimesTillN {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,13 +10,13 @@ public class PrimeNumber {
         int end = scanner.nextInt();
 
         for (int i = start; i <= end; i++) {
-            if(isPrimeBestWay(i)) {
+            if(isPrimeBetterWay(i)) {
                 System.out.println(i);
             }
         }
     }
 
-    static boolean isPrimeGoodWay(int val) {
+    static boolean isPrimeNormalWay(int val) {
         if(val == 0 || val == 1) return true;
 
         boolean isNotPrime = false;
@@ -31,7 +31,7 @@ public class PrimeNumber {
         return !isNotPrime;
     }
 
-    static boolean isPrimeBetterWay(int val) {
+    static boolean isPrimeGoodWay(int val) {
         if(val == 0 || val == 1) return true;
 
         boolean isNotPrime = false;
@@ -46,7 +46,7 @@ public class PrimeNumber {
         return !isNotPrime;
     }
 
-    static boolean isPrimeBestWay(int val) {
+    static boolean isPrimeBetterWay(int val) {
         if(val == 0 || val == 1) return true;
 
         boolean isNotPrime = false;

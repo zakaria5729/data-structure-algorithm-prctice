@@ -1,6 +1,8 @@
-    import java.util.Scanner;
+package prime_factorisation;
 
-    public class PrimeFactorisation {
+import java.util.Scanner;
+
+    public class PrimeFactorisationNumber {
 
         public static void main(String[] args) {
             Scanner scn = new Scanner(System.in);
