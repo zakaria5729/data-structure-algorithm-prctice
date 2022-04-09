@@ -5,8 +5,12 @@ import java.util.Scanner;
 public class DigitOfANumber {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-
         int n = scn.nextInt();
+
+        digitOfNumber(n);
+    }
+
+    static void digitOfNumber(int n) {
         int power = 1;
         int temp = n;
 
@@ -23,5 +27,14 @@ public class DigitOfANumber {
             temp = temp % power;
             power = power / 10;
         }
+    }
+
+    static void digitOfNumberRecursive(int n) {
+        if (n <= 0) {
+            return;
+        }
+
+        digitOfNumber(n / 10);
+        System.out.println(n % 10);
     }
 }

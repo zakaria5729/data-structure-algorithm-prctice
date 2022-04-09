@@ -1,3 +1,5 @@
+package digit_frequency;
+
 import java.util.Scanner;
 
 public class DigitFrequency {
